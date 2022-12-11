@@ -2,8 +2,17 @@ APP GUIDE
 
 Tech stack - ReactJS , NodeJS , Express , MySQL 
 
+###############################################################################################
 
+Description and assumptions  
 
+1)This is designed for  yoga acadmy  App is designed is way such that it would follow CRUD operations  . 
+2) Make Payment method in AddEdit.js is supposed to kept blank . 
+3) Client folder in code directory refers to Frontend part (react) 
+4) Server folder in code directory refers to Backend part which includes server and database connectivity . 
+5) App uses completely relational database (MySQL ) and used mysql2 it supports mySQL versions  8 and above . 
+
+watch demo - https://youtu.be/QH0418vZyYM
 ######################################### frontend guide ######################################
 
 Dependencies 
@@ -13,7 +22,7 @@ ToastContainer                  - show toast notifications
 axios                           - fetching API's 
 
 
-#React App structure - 
+##React App structure - 
 
 node_modules 		(required modules ) 
 public 			(entry points of app  --index.html ) 
