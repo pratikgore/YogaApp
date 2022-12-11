@@ -1,0 +1,79 @@
+APP GUIDE 
+
+Tech stack - ReactJS , NodeJS , Express , MySQL 
+
+
+
+######################################### frontend guide ######################################
+
+Dependencies 
+
+BrowserRouter , Routes , Route  - routing pages and setting up routes 
+ToastContainer                  - show toast notifications
+axios                           - fetching API's 
+
+
+#React App structure - 
+
+node_modules 		(required modules ) 
+public 			(entry points of app  --index.html ) 
+
+src         -->pages (all pages in app )  ---> Landing.js (main page ) 
+					  ---> Home.js (page to show listed members )
+					  ---> AddEdit.js (page with form to collect data of customers )
+					  ---> View.js (page to show personal information )  
+
+	    -->img      (images used in frontpage ) 
+	    -->App.js   (entry point and routing ) 
+	    -->index.js (root for index.html )
+   	
+
+
+
+
+
+
+###################################### Backend Guide ###########################################
+
+
+
+Dependencies 
+
+express   
+mysql2     (mysql database version 8 or higher ) 
+
+
+API methods - 
+
+PUT - update data into databse 
+POST - add data into databse 
+GET - get complete  data 
+GET/id - get data with given id 
+
+
+
+Database schemas - 
+
+Database name - yoga_class 
+Table name    - user_db 
+
+schemas  - 
+
+create table user_db {
+	id INT PRIMARY KEY , 
+	name VARCHAR , 
+	contact VARCHAR , 
+	email VARCHAR , 
+	age INT , 
+	batch VARCHAR ,
+} ; 
+
+
+create table admin {
+	id INT PRIMARY KEY , 
+	user_id INT reference user_db(id) , 
+} ; 
+
+
+
+
